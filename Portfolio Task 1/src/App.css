@@ -1,0 +1,26 @@
+
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+ /*dark bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] */
+
+@theme {
+
+   --font-code :"Press Start 2P", system-ui;
+
+  
+
+    --color-primaryblue: rgb(79, 195, 247);
+    --color-AccentPurple: rgb(176, 133, 245);
+    --color-DarkBackground: rgb(26, 27, 35);
+    --color-GlassSurface: rgb(42, 45, 58);
+    --color-PureWhite: rgb(255, 255, 255);
+    --color-MutedGray: rgb(100, 116, 139);
+    
+}
+html,div,ul,p,h1,form,svg{
+  transition: background-color .5s ease, color .5s ease;
+}
+
